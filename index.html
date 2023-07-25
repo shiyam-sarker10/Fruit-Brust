@@ -21,13 +21,13 @@
         </style>
     </head>
 
-    <body class="text-white">
+    <body class="">
         <!-- header section Start  -->
         <header class="">
             <!-- nav section  -->
-            <nav class="max-w-6xl mx-auto py-12">
-                <div class="navbar bg-[#F85559] rounded-full p-8 px-10 ">
-                    <div class="hidden lg:flex text-white">
+            <nav class="max-w-6xl mx-auto py-4 md:py-12">
+                <div class="navbar sm:bg-[#F85559] rounded-full  py-8 md:px-10 ">
+                    <div class="hidden lg:flex lg:text-white">
                         <ul class="menu menu-horizontal  text-lg p-0">
                             <li><a class="hover:text-white"> Home </a></li>
                             <li><a class="hover:text-white">About Us</a></li>
@@ -35,7 +35,7 @@
                             <li><a class="hover:text-white">All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="  text-white flex flex-row-reverse lg:flex-row justify-center flex-1">
+                    <div class="  sm:text-white flex flex-row-reverse lg:flex-row justify-between md:justify-center flex-1">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -45,27 +45,133 @@
                                 </svg>
                             </label>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-[#F85559] font-medium  rounded-box w-28">
-                                <li><a class=" text-white hover:border-b-2 border-white"> Home </a></li>
-                                <li><a class=" text-white hover:border-b-2 border-white">About Us</a></li>
-                                <li><a class=" text-white hover:border-b-2 border-white">Shop</a></li>
-                                <li><a class=" text-white hover:border-b-2 border-white">All Fruits</a></li>
+                                class="menu menu-sm dropdown-content -left-20 md:left-auto mt-3 z-[1] p-4 shadow bg-white sm:bg-[#F85559] font-medium  rounded-box w-32 md:w-64">
+                                <li><a class=" text-gray-800 sm:text-white md:hover:border-b-2 sm:border-white"> Home </a></li>
+                                <li><a class=" text-gray-800 sm:text-white md:hover:border-b-2 sm:border-white">About Us</a></li>
+                                <li><a class=" text-gray-800 sm:text-white md:hover:border-b-2 sm:border-white">Shop</a></li>
+                                <li><a class=" text-gray-800 sm:text-white md:hover:border-b-2 sm:border-white">All Fruits</a></li>
                             </ul>
                         </div>
                         <div class="flex items-center">
                             <img class="w-10" src="./images/logo.png" alt="">
-                            <a class="btn  bg-transparent border-none text-white hover:bg-transparent normal-case text-2xl md:text-4xl">Fruit Burst</a>
+                            <a
+                                class="btn  bg-transparent border-none sm:text-white hover:bg-transparent normal-case text-2xl md:text-4xl">Fruit
+                                Burst</a>
                         </div>
                     </div>
 
                     <div class=" w-full relative hidden md:block flex-1">
                         <img class="w-4 absolute right-4 top-4" src="./images/search.svg" alt="">
-                        <input  class="w-full py-3 px-5 rounded-full" type="text" placeholder="Search Here">
+                        <input class="w-full py-3 px-5 rounded-full" type="text" placeholder="Search Here">
                     </div>
                 </div>
             </nav>
-            <!-- banner section start  -->
-            
+            <!-- banner section  -->
+            <div class="max-w-6xl mx-auto relative">
+                <div class="carousel w-full text-white h-72 md:h-auto">
+
+                    <!-- slide 1  -->
+
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./images/banner1.png" class="w-full" />
+                        <div class="absolute inset-0 pt-4 md:pt-8 lg:pt-20 text-center space-y-6 bg-black bg-opacity-50 ">
+                            <h2 class=" text-3xl md:4xl lg:text-7xl font-bold ">Exotic tastes at your <br>
+                                doorstep</h2>
+                            <p class="">We supply highly quality organic products</p>
+                            <button class=" btn btn-error bg-[#F85559] border-none text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❮</a>
+                            <a href="#slide2"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❯</a>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./images/banner2.png" class="w-full" />
+                        <div class="absolute inset-0 pt-4 md:pt-8 lg:pt-20 text-center space-y-6 bg-black bg-opacity-50 ">
+                            <h2 class=" text-3xl md:4xl lg:text-7xl font-bold ">Fresh and super hygiene<br>
+                            fruits </h2>
+                            <p class="">We supply highly quality organic products</p>
+                            <button class=" btn btn-error bg-[#F85559] border-none text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❮</a>
+                            <a href="#slide3"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❯</a>
+                        </div>
+
+                    </div>
+
+                    <!-- slide 3  -->
+
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./images/banner3.png" class="w-full" />
+                        <div class="absolute inset-0 pt-4 md:pt-8 lg:pt-20 text-center space-y-6 bg-black bg-opacity-50 ">
+                            <h2 class=" text-3xl md:4xl lg:text-7xl font-bold ">Super-fast delivery in <br>
+                            no-time </h2>
+                            <p class="">We supply highly quality organic products</p>
+                            <button class=" btn btn-error bg-[#F85559] border-none text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❮</a>
+                            <a href="#slide4"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❯</a>
+                        </div>
+                    </div>
+
+                    <!-- slide 4  -->
+
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="/images/banner4.png" class="w-full" />
+                        <div class="absolute inset-0 pt-4 md:pt-8 lg:pt-20 text-center space-y-6 bg-black bg-opacity-50 ">
+                            <h2 class=" text-3xl md:4xl lg:text-7xl font-bold ">High and premium  <br>
+                                quality
+                            </h2>
+                            <p class="">We supply highly quality organic products</p>
+                            <button class=" btn btn-error bg-[#F85559] border-none text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❮</a>
+                            <a href="#slide1"
+                                class="btn btn-circle border-none hover:opacity-80 hover:bg-black hover:text-white bg-black text-white opacity-60">❯</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class=" text-[#121212]   absolute w-full -bottom-20 hidden lg:block ">
+                    <div class="flex justify-center bg-white gap-x-8 shadow-md py-10 px-12 w-3/4 mx-auto rounded-lg">
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <img class="w-4/6" src="./images/fruit1.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <img class="w-4/6" src="./images/fruit2.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <img class="w-4/6" src="./images/fruit3.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <img class="w-4/6" src="./images/fruit4.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <img class="w-4/6" src="./images/fruit5.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </header>
         <!-- header section end  -->
     </body>
